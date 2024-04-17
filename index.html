@@ -13,10 +13,19 @@
 <body>
     
     <div id="app">
+        <!-- input -->
         <label for="userphrase">Scrivi qui una frase</label>
         <input type="text" id="userphrase" v-model="greeting">
-        <h1>{{ greeting }}</h1>
+        <!-- /input -->
+
+        <!-- phrase print -->
+        <h1 :class="phrasecolor">{{ greeting }}</h1>
+
+        <!-- img -->
         <div class="cat"><img :src="imgName" alt=""></div>
+
+        <!-- button -->
+        <button @click="color">change color</button>
     </div>
 
     <!-- script -->
