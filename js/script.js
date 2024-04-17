@@ -15,7 +15,7 @@ createApp({
                 this.phrasecolor = "";
             } else {
                 this.phrasecolor = "green";
-            } 
+            }
         }
     }
     
