@@ -13,7 +13,8 @@
 <body>
     
     <div id="app">
-
+        <label for="userphrase">Scrivi qui una frase</label>
+        <input type="text" id="userphrase" v-model="greeting">
         <h1>{{ greeting }}</h1>
         <div class="cat"><img :src="imgName" alt=""></div>
     </div>
